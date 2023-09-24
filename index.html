@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Box Popup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="chatbot-toggler" id="popupButton">
+        <img src="logo1.png" alt="">
+        <span class="material-symbols-rounded"></span>
+        <span class="material-symbols-outlined">close</span>
+    </button>
+    <div id="chatbot-popup" class="hidden">
+        <div class="box">
+            <img src="chatbot (1).png" alt="view">
+            <div class="chat-box" id="chat-box">
+                <!-- Chat messages will be displayed here -->
+            </div>
+            <form id="chat-form">
+                <input type="text" placeholder="Hi there 👋 What report are you looking for..." class="input" id="chat-input" />
+            </form>
+            <button id="popupCloseButton" class="material-symbols-outlined">close</button>
+        </div>
+    </div>
+    <script src="chatbot.js"></script>
+</body>
+</html>
